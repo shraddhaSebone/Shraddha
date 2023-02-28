@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+                margin: 0px;
+                padding: 0px;
+        }
+        .container{
+            width: 45vw;
+            height: 90vh;
+            border: 2px solid black;
+        }
+       
+        #canvas{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="canvas">
+
+        </canvas>
+        <img src="aven.jpg" alt="" id="image" style="display: none;">
+    </div>
+
+    <script>
+        const c = document.getElementById("canvas");
+        const ctx = c.getContext("2d");
+        const img = document.getElementById("image");
+        c.height = img.height;
+        c.width = img.width;
+
+        ctx.drawImage(img, 0, 0, img.width, img.height);
+
+        window.addEventListener('click', function a(){
+            var imgwidth = img.offsetWidth;
+            var imgheight = img.offsetHeight;
+            c.width = imgwidth;
+            c.height = imgheight;
+            ctx.save();
+            ctx.translate(imgwidth / 2, imgheight / 2);
+            ctx.rotate(Math.PI/2);
+            ctx.drawImage(
+            img, -(imgwidth / 2), -(imgheight / 2)
+            );
+            ctx.restore();
+        })
+    </script>
+</body>
+</html>

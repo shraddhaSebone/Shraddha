@@ -1,0 +1,72 @@
+.header{
+    background-color: cyan;
+    height: 10vh;
+}
+.container{
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    margin: 10px;
+}
+.containerchild1{
+    background-color: orange;
+    overflow: scroll;
+    height: 70vh;
+    width: 30vw;
+    margin: 10px;
+}
+.containerchild2{
+    display: flex;
+    height: 70vh;
+    margin: 10px;
+    width: 75vw;
+    background-color: rgb(183, 240, 240);
+    align-items: center;
+}
+.subcontaineritem1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(251, 162, 238);
+    height: 67vh;
+    width: 22vw;
+    margin: 10px;
+}
+.subcontaineritem2{
+    display: flex;
+    background-color: rgb(127, 166, 238);
+    justify-content: space-between;
+    overflow: scroll;
+    flex-wrap: wrap;
+    height: 67vh;
+    width: 50vw;
+    margin: 10px; 
+}
+.first{
+    background-color: grey;
+    margin: 50px;
+    height: 150px;
+    width: 150px;
+}
+.childsub1{
+    display: flex;
+    align-items: center;
+    background-color: rgb(202, 162, 239);
+    margin: 5px auto 5px auto ;
+    height: 70px;
+    width: 280px;
+}
+.gola{
+    background-color: grey;
+    margin: 0px 10px 0px 10px;
+    height:50px ;
+    width: 50px;
+    border-radius: 150px;
+}
+.gola1{
+    background-color: grey;
+    margin: 40px;
+    height:200px ;
+    width: 200px;
+    border-radius: 250px;
+}

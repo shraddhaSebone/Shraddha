@@ -1,0 +1,43 @@
+.header{
+    background-color: cyan;
+    height: 10vh;
+}
+.container{
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    margin: 10px;
+}
+.containerchild1{
+    background-color: orange;
+    height: 70vh;
+    width: 33vw;
+    margin: 10px;
+}
+.containerchild2{
+    height: 70vh;
+    margin: 10px;
+}
+.subheader{   
+    background-color: green;
+    height: 20vh;
+    width: 60vw;
+    margin: 10px;
+}
+.subcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+    width: 60vw;
+
+}
+.subcontaineritems{
+    background-color: grey;
+    height:200px ;
+    margin: 50px;
+    width: 200px;
+    border-radius: 150px;
+}

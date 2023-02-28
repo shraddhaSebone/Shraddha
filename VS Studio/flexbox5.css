@@ -1,0 +1,125 @@
+.container{
+    display: flex;
+    height: 95vh;
+}
+.container1{
+    background-color: black;
+    border-right: 0.1px solid rgb(153, 136, 136);
+    height: 95vh;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container2{
+    background-color: black;
+    height: 95vh;
+    width: 65vw; 
+}
+.header1{
+    display: flex;
+    background-color: rgb(48, 47, 47);
+    height: 10vh;
+    width: 33vw;
+    margin: 15px 5px 0px 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.header2{
+    display: flex;
+    background-color: rgb(48, 47, 47);
+    height: 10vh;
+    width: 62vw;
+    margin: 15px 30px 0px 1px;
+    justify-content: space-between;
+    align-items: center;
+}
+#fname{
+    background-color: rgb(48, 47, 47);
+    height: 5vh;
+    width: 25vw;
+    margin: 8px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;  
+    padding-left: 10px; 
+}
+.subconatiner1{ 
+    color: white;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 30vw;
+    margin: 0px 0px 0px 50px;
+    border-bottom: 1px solid rgb(161, 153, 153);
+}
+.gola1{
+    background-color: grey;
+    height:50px ;
+    width: 50px;
+    border-radius: 250px;
+    margin-left: 20px;
+}
+.namemessage{
+   margin-left: 30px;
+}
+.timemessage{
+    margin-left: 200px;    
+}
+.contactlist{
+    overflow-y: scroll;
+    height: 70vh;
+}
+.element1{
+    background-color: grey;
+    height:50px ;
+    width: 50px;
+    border-radius: 250px;
+    /* margin: 10px 0px 0px 20px; */
+}
+.element{
+    height:30px ;
+    width: 30px;
+    border-radius: 250px;
+    margin: 10px 0px 0px 20px;
+}
+.element3{
+    display: flex;
+    width: 20vw;
+    align-items: center;
+}
+.element4{
+    display: flex;
+    width: 10vw;
+    align-items: center;
+    justify-content: right;
+}
+.demo{
+    margin-left: 15px;
+}
+.demo1{
+      margin: 0px 10px 0px 10px;
+}
+.box{
+    height: 66vh;
+}
+.header3{
+   display: flex;
+   justify-content: space-around;
+}
+.element5{
+    height: 20px;
+}
+#inputbox{
+    width: 50vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color:grey;
+    color: black;
+    border: none;
+}
+/* #inputbox */
+::placeholder {
+    color: #e7ecef;
+    opacity: 1;
+}

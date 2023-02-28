@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <h2 id="cal">Calculator</h2>  
+    <div class="mainCalculator">
+        <h2 class ="inputbox" id = "input" >0</h2> 
+            <div class="otherbox">
+                <button onclick="deleteTheValue(this)" style="width: 10%; height: 20px;" class = "del" >DE</button>
+            </div>
+        <div class="calculator">
+                <div class = "row1">
+                    <button onclick="clearInput(this)" class = "button">AC</button>
+                    <button onclick="changeSign(this)" class = "button">+/-</button>
+                    <button onclick="changeText(this)" class = "button">%</button>
+                    <button onclick="changeText(this)" class = "button">/</button>
+                </div>  
+                <div class = "row1">
+                    <button onclick="changeText(this)" class = "button">7</button>
+                    <button onclick="changeText(this)" class = "button">8</button>
+                    <button onclick="changeText(this)" class = "button">9</button>
+                    <button onclick="changeText(this)" class = "button">*</button>
+                </div>  
+                <div class = "row1">
+                    <button onclick="changeText(this)" class = "button">4</button>
+                    <button onclick="changeText(this)" class = "button">5</button>
+                    <button onclick="changeText(this)" class = "button">6</button>
+                    <button onclick="changeText(this)" class = "button">-</button>
+                </div> 
+                <div class = "row1">
+                    <button onclick="changeText(this)" class = "button">1</button>
+                    <button onclick="changeText(this)" class = "button">2</button>
+                    <button onclick="changeText(this)" class = "button">3</button>
+                    <button onclick="changeText(this)" class = "button">+</button>
+                </div> 
+                <div class = "row1">
+                    <button onclick="changeText(this)" class = "button button0">0</button>
+                    <button onclick="changeText(this)" class = "button">.</button>
+                    <button onclick="equal(this)"class = "button">=</button>
+                </div> 
+        </div> 
+    </div>
+    <script>
+        function changeText(id) {
+            //id = <button onclick="clearInput(this)" class = "button">AC</button>
+            let x = document.getElementById("input");
+            //x = <h2 class ="inputbox" id = "input">innerHtml</h2>            
+            if(x.innerHTML == 0)
+            {
+                x.innerHTML = id.innerHTML;
+            }
+            else
+            {
+                x.innerHTML = x.innerHTML + id.innerHTML
+            }
+        }  
+        function clearInput(){
+            document.getElementById("input").innerHTML = 0;
+        }
+        function equal(){
+            let y = document.getElementById("input");
+            y.innerHTML = eval(y.innerHTML);
+        }
+        function changeSign(){
+            let y = document.getElementById("input");
+            y.innerHTML = eval(y.innerHTML);
+            y.innerHTML = y.innerHTML * -1;
+        }
+        function deleteTheValue(){
+            let y = document.getElementById("input");//string = string.slice(0,-1);
+            y.innerHTML = y.innerHTML.slice(0,-1);
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.container{
+  height: 325px;
+  width: 250px;
+  margin: 20px;
+  background-color: rgb(224, 242, 242);
+}
+.container2{
+    display: flex;
+}
+#discountPercentage{
+    margin-left: 10px;
+    color: green;
+}
+#image{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+.container4{
+    margin: 5px;
+}
+.container3{
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boldd{
+    font-style: bold;
+}
+#discountPercentage{
+    color: rgb(107, 107, 107);
+}

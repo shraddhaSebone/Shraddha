@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px -5px;
+    height: 650px;
+    width: 1000px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#image{
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    box-shadow: 0px 2px 10px -5px;
+}
+.basicdetails{
+    height: 250px;
+    width: 725px;
+    box-shadow: 0px 2px 10px -5px;
+    border-radius: 20px;
+    justify-items:center;
+    align-items: center;
+}
+.imagebaiscdetail{
+    height: 280px;
+    width: 980px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px 0px 10px;
+}
+.name{
+    margin: 8px 0px 3px 90px;     
+}
+.details{
+    height: 300px;
+    width: 980px;
+    display: flex;
+    margin: 0px 10px 0px 10px;
+    justify-content: space-evenly;
+    
+}
+.detailseach{
+     height: 300px;
+     width: 300px;
+     border-radius: 20px;
+     box-shadow: 0px 2px 10px -5px;
+     margin: 0px 10px 0px 10px;
+}
+.headername{
+    display: flex;
+    height: 20px;
+    width: 980px;
+    margin: 5px 10px 0px 10px;
+    justify-content: space-around;
+}
+.heardernameEach{
+    margin: auto;
+}
+.moredetail{
+    margin-left: 20px;
+}
+.abc{
+    height: 290px;
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#firstHeader{
+    margin: 0px;
+}
+.basicheader{
+    height: 20px;
+    width: 980px;
+    display: flex;
+    justify-content: center;
+}
